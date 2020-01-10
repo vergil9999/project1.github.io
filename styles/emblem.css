@@ -1,0 +1,102 @@
+.emblem {
+    margin-top: 82px;
+    font-family: 'Inter', sans-serif;
+}
+.emblem__title {
+    width: 430px;
+    padding: 0;
+    margin: 0;
+    font-size: 2.6rem;
+    line-height: 1.07;
+    font-weight: 900;
+}
+.emblem__container {
+    display: flex;
+    text-align: center;
+    margin: 82px auto 0 auto;
+}
+.emblem__block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.emblem__image {
+    height: 226px;
+    border: 0px;
+}
+.emblem__container {
+    margin-top: 82px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-column-gap: 36px;
+    justify-items: center;
+}
+.city {
+    padding: 0;
+    margin: 35px 0 0 0;
+    font-size: 1.5rem;
+    line-height: 1.08;
+    text-align: center;
+    color: #CCCCCC;
+    font-weight: 900;
+}
+@media screen and (max-width: 1279px) {
+    .emblem {
+        margin-top: 102px;
+    }
+    .emblem__container {
+        grid-column-gap: 30px;
+        justify-items: center;
+    } 
+
+    .emblem__image {
+        height: 200px;
+    }
+
+}
+@media screen and (max-width: 1023px) {
+    .emblem__title {
+        width: 500px;
+        margin-left: 24px;
+        font-size: 2.6rem;
+        line-height: 1.08;
+        font-weight: 900;
+    }
+    .emblem__container {
+        margin: 82px auto;
+        grid-template-columns: repeat(3, 1fr);
+        grid-column-gap: 65px;
+        grid-row-gap: 60px;
+        justify-items: center;
+    } 
+    .emblem__image {
+        height: 226px;
+    }
+
+}
+@media screen and (max-width: 767px) {
+    .emblem {
+        margin-top: 64px;
+    }
+    .emblem__container {
+        margin: 32px auto;
+        grid-template-columns: 1fr;
+        grid-column-gap: 0;
+        grid-row-gap: 60px;
+        justify-items: center;
+    } 
+    .emblem__title {
+        text-align: center;
+        width: calc(100% - 32px);
+        margin-left: 16px;
+        margin-right: 16px;
+        font-size: 1.5rem;
+        line-height: 1.08;
+        font-weight: 900;
+    }
+}
+@media screen and (max-width: 374px) {
+    .city {
+        width: 230px;
+    }
+}

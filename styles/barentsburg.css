@@ -1,0 +1,118 @@
+.barentsburg {
+    margin-top: 85px;
+    font-family: 'Inter', sans-serif;
+}
+.barentsburg__title {
+    margin: 0;
+    padding: 0;
+    font-size: 2.6rem;
+    line-height: 1;
+    font-weight: 900;
+}
+.coord {
+    margin: 20px 0 0 0;
+    padding: 0;
+    font-size: 2.6rem;
+    line-height: 1;
+    font-weight: 400;
+}
+.barentsburg__image {
+    margin-top: 48px;
+    width: 1184px;
+    height: 464px;
+    border: 0;
+}
+.barentsburg__block {
+    display: grid;
+    grid-template-columns: 380px 282px;
+    grid-column-gap: 120px;
+    margin-top: 48px;
+}
+.barentsburg__block_link {
+    margin: 0;
+    padding:0;
+}
+.barentsburg__text {
+    margin: 0;
+    padding:0;
+    font-size: 1.12rem;
+    line-height: 1.66;
+}
+.barentsburg__url {
+    color: #AAAAAA;
+    margin: 0;
+    padding: 0;
+    letter-spacing: 0.2em;
+    font-size: .75rem;
+    line-height: 1.66;
+}
+.barentsburg__link {
+    margin: 12px 0 0 0;
+    font-size: 1.12rem;
+    line-height: 1.66;
+    color: white;
+    text-decoration-line: underline;
+}
+.barentsburg__link:hover {
+    opacity: 0.7;
+}
+@media screen and (max-width: 1279px) {
+    .barentsburg {
+        margin-top: 102px;
+    }
+    .barentsburg__image {
+        width: 928px;
+        height: 100%;
+    }
+
+}
+@media screen and (max-width: 1023px) {
+    .barentsburg__block {
+        display: grid;
+        grid-template-columns: 400px 290px;
+        grid-column-gap: 24px;
+        margin-top: 56px;
+    }
+    .barentsburg__image {
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .barentsburg {
+        margin-top: 88px;
+    }
+    .barentsburg__title {
+        font-size: 1.5rem;
+        line-height: 1.08;
+    }
+    .coord {
+        margin-top: 10px;
+        font-size: 1rem;
+        line-height: 1.4;
+    }
+
+    .barentsburg__image {
+        margin-top: 16px;
+        width: calc(100% + 32px);
+        margin-left: -16px;
+        margin-right: -16px;
+    }
+    .barentsburg__block {
+        display: flex;
+        flex-direction: column-reverse;
+        grid-column-gap: 0;
+        margin-top: 24px;
+    }
+    .barentsburg__text {
+        margin-top: 32px;
+    }
+}
+
+@media screen and (max-width: 374px) {
+    .barentsburg {
+        margin-top: 64px;
+    }
+}

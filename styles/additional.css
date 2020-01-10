@@ -1,0 +1,109 @@
+.additional {
+    margin-top: 102px;
+}
+.additional__block {
+    margin-top: 72px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 16px;
+}
+.additional__info {
+    width: 100%;
+    display: flex;
+    position: relative;
+    border: 0px;
+    margin: 0px;
+    padding: 0px;
+}
+.additional__info::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: .5;
+    border: 0;
+    border-radius: 5px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+.additional__image {
+    width: 100%;
+    border: 0px;
+    border-radius: 5px;
+}
+.block__heading {
+    padding: 0;
+    margin: 0 18px;
+    position: absolute;
+    top: 30px;
+    left: 0;
+    font-weight: 900;
+    font-size: 1.68rem;
+    line-height: 1.07;
+    z-index: 2;
+}
+.block__text {
+    padding: 0;
+    margin: 0 18px;
+    position: absolute;
+    bottom: 30px;
+    font-size: .87rem;
+    line-height: 1.4;
+    z-index: 2;
+}
+@media screen and (max-width: 1279px) {
+    .additional__block {
+        margin-top: 64px;
+        grid-column-gap: 10px;
+        margin-left: -31px;
+        margin-right: -31px;
+    }
+
+    .block__heading {
+        margin: 0 16px;
+        top: 24px;
+        font-size: 1.5rem;
+        line-height: 1.08;
+    }
+}
+@media screen and (max-width: 1023px) {
+    .additional__block {
+        grid-template-columns: 1fr 1fr;
+        margin-top: 56px;
+        grid-column-gap: 16px;
+        grid-row-gap: 16px;
+        margin-left: 92px;
+        margin-right: 92px;
+    }
+
+    .block__heading {
+        margin: 0 18px;
+        top: 30px;
+        font-size: 1.68rem;
+        line-height: 1.07;
+    }
+}
+@media screen and (max-width: 767px) {
+    .additional {
+        margin-top: 64px;
+    }
+    .additional__block {
+        margin: 48px auto 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .block__heading {
+        font-size: 1.5rem;
+        line-height: 1.08;
+    }
+    .additional__info {
+        width: 284px;
+        margin-bottom: 24px;
+    }
+    .additional__info:last-of-type {
+        margin-bottom: 0;
+    }
+}
